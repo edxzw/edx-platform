@@ -2280,7 +2280,7 @@ msgstr "我的笔记"
 
 #: common/static/js/vendor/ova/catch/js/catch.js
 msgid "Instructor"
-msgstr "主讲教师"
+msgstr "教师工具"
 
 #: common/static/js/vendor/ova/catch/js/catch.js
 msgid "Public"

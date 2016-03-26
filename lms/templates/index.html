@@ -19,8 +19,13 @@ from microsite_configuration import microsite
 
 <section class="home">
     
+
+  <script type=text/javascript src="/static/js/jquery.js"></script>
+  <script type=text/javascript src="/static/js/js.js"></script>
   <script type="text/javascript" src="/static/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" >
+  <script type="text/javascript" >
+  
+    
 	function moveleft(){
 		var scrleft = $(".mylink").scrollLeft();
 		if(scrleft>0) $(".mylink").animate({scrollLeft:(scrleft-214)},500);
@@ -39,9 +44,27 @@ from microsite_configuration import microsite
 </script>
     
     
-    <div>
-        <img src="http://www.thechoice.com.cn/uploadfile/upload/2015050216124455.jpg" height="100%" width="100%" alt="Dao Rui" >
-    </div>
+<div class="content">
+  <div class="area">
+    <a id=prev class="prevBtn qq" href="javascript:void(0)"></a>
+    <a id=next class="nextBtn qq" href="javascript:void(0)"></a>
+	<div id=js class="js">
+		<div class="box01">
+          <img onclick="javascript:window.open('exterior.html','_blank')"  alt="产外观品" src="/static/images/floatimages/banner-1.jpg" />
+      	  <img   onclick="javascript:window.open(' function.html','_blank')"  alt="功能"  class="img_display"  alt="功能页面" src="/static/images/floatimages/banner-2.jpg"> 
+		  <img  onclick="javascript:window.open('function.html','_blank')" class="img_display" src="/static/images/floatimages/banner-3.jpg">
+		  <img  onclick="javascript:window.open('exterior.html','_blank')" class="img_display" alt="在线购买" src="/static/images/floatimages/banner-4.jpg">
+		</div>
+
+		<div id=jsNav class=jsNav>	
+			<a class="trigger imgSelected" href="javascript:void(0)"></a>
+			<a class="trigger" href="javascript:void(0)"></a>
+			<a class="trigger" href="javascript:void(0)"></a>
+		    <a class="trigger" href="javascript:void(0)"></a>
+		</div>
+	</div>
+  </div>
+</div> 
    
     
     <div class="school">
@@ -50,75 +73,75 @@ from microsite_configuration import microsite
     <div class="mylink">
        <ul class="school-list" style="margin-left: -6.20979e-05%;">
               
-                <li class="school-item first">
-                    <a href="https://www.edx.org/school/mitx" rel="canonical">
-                        <img src="/static/images/school/mit_logo_200x101_0.png" class="carousel-img" alt="Massachusetts Institute of Technology">
+               <li class="school-item first">
+                    <a href="http://www.portshanghai.com.cn" rel="canonical">
+                        <img src="/static/images/school/01shanghai.jpg" class="carousel-img" alt="上港集团">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/harvardx" rel="canonical">
-                        <img src="/static/images/school/harvard_logo_200x101_0.png" class="carousel-img" alt="Harvard University">
+                    <a href="http://www.ptacn.com" rel="canonical">
+                        <img src="/static/images/school/02tianjin.jpg" class="carousel-img" alt="天津港">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/uc-berkeleyx" rel="canonical">
-                        <img src="/static/images/school/berkeley_logo_200x101_0.png" class="carousel-img" alt="UC Berkeley">
+                    <a href="http://www.nbport.com.cn" rel="canonical">
+                        <img src="/static/images/school/03ningbo.jpg" class="carousel-img" alt="宁波港集团">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/utx" rel="canonical">
-                        <img src="/static/images/school/ut_logo_200x101_0.png" class="carousel-img" alt="University of Texas System">
+                    <a href="http://www.ykport.com.cn" rel="canonical">
+                        <img src="/static/images/school/04yingkou.jpg" class="carousel-img" alt="营口港集团">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/rwthx" rel="canonical">
-                        <img src="/static/images/school/rwthx-logo-200x101a.png" class="carousel-img" alt="The RWTH Aachen University">
+                    <a href="http://www.yantaiport.com.cn" rel="canonical">
+                        <img src="/static/images/school/05qingdao.jpg" class="carousel-img" alt="青岛港">
                     </a>
                 </li>
               
                 <li class="carousel-item">
-                    <a href="https://www.edx.org/school/anux" rel="canonical">
-                        <img src="/static/images/school/anu_logo_200x101_0.png" class="carousel-img" alt="Australian National University">
+                    <a href="http://www.yantaiport.com.cn" rel="canonical">
+                        <img src="/static/images/school/06yantai.jpg" class="carousel-img" alt="烟台港">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/bux" rel="canonical">
-                        <img src="/static/images/school/boston_logo_200x101_0_0.png" class="carousel-img" alt="Boston University">
+                    <a href="http://www.portdalian.com" rel="canonical">
+                        <img src="/static/images/school/07dalian.jpg" class="carousel-img" alt="大连港">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/georgetownx" rel="canonical">
-                        <img src="/static/images/school/georgetown_logo_200x101_0.png" class="carousel-img" alt="Georgetown University">
+                    <a href="http://www.gzpgroup.com" rel="canonical">
+                        <img src="/static/images/school/08guangzhou.jpg" class="carousel-img" alt="广州港集团">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/delftx" rel="canonical">
-                        <img src="/static/images/school/delft_logo_200x101_0.png" class="carousel-img" alt="Delft University of Technology">
+                    <a href="http://www.hngh.com.cn" rel="canonical">
+                        <img src="/static/images/school/09hainan.jpg" class="carousel-img" alt="海南港航">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/sorbonnex" rel="canonical">
-                        <img src="/static/images/school/sorbonne-200x101.png" class="carousel-img" alt="Sorbonne">
+                    <a href="http://www.lygport.com.cn" rel="canonical">
+                        <img src="/static/images/school/10lianyungang.jpg" class="carousel-img" alt="连云港">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/ubcx" rel="canonical">
-                        <img src="/static/images/school/ubcx-logo12012015-200x101.png" class="carousel-img" alt="University of British Columbia - school logo">
+                    <a href="http://www.rzport.com" rel="canonical">
+                        <img src="/static/images/school/11rizhao.jpg" class="carousel-img" alt="日照港">
                     </a>
                 </li>
               
                 <li class="school-item">
-                    <a href="https://www.edx.org/school/uqx" rel="canonical">
-                        <img src="/static/images/school/queensland_logo_200x101_0_0.png" class="carousel-img" alt="University of Queensland">
+                    <a href="http://www1.ytport.com" rel="canonical">
+                        <img src="/static/images/school/12yantian.jpg" class="carousel-img" alt="盐田港">
                     </a>
                 </li>
               
