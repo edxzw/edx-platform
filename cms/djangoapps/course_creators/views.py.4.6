@@ -1,19 +1,9 @@
 """
 Methods for interacting programmatically with the user creator table.
 """
-
-import time
-import json
-import base64
-import hmac
-import hashlib
-
 from course_creators.models import CourseCreator
 from student.roles import CourseCreatorRole
 from student import auth
-
-from django.http import HttpResponse
-from django.shortcuts import render
 
 
 def add_user_with_status_unrequested(user):
@@ -107,35 +97,3 @@ def _add_user(user, state):
         return True
 
     return False
-	
-'''
-    to make token
-	added by gzc 20160404
-	copyright from JING Xia
-'''
-def token(request):
-    scope = 'zhishigang'
-    access_key = 'TNryzbrrYvEgQJG46lttCc4Gpl_wx-t1ULH2QMs6'
-    secret_key = 'yFQBoM5W2BoteMika-uogHDRHubUFXg6Bti_IBTk'
-
-    policy = {
-        'scope': scope,
-        'deadline': int(time.time()+3600),
-    }
-    policy_string = json.dumps(policy).replace(' ', '')
-    encoded_policy = base64.urlsafe_b64encode(policy_string)
-    sign = hmac.new(secret_key, encoded_policy, hashlib.sha1).digest()
-    encoded_sign = base64.urlsafe_b64encode(sign)
-    token = access_key + ':' + encoded_sign + ':' + encoded_policy
-#    print token
-#    return HttpResponse(token)
-    return HttpResponse(json.dumps({
-        'uptoken': token,
-    }), content_type = 'application/json')
-'''
-	test upload
-	added by gzc 20160404
-	just for test
-'''
-def test_upload(request):
-    return render(request,'test_upload.html')

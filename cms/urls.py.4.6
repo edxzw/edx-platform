@@ -66,15 +66,6 @@ urlpatterns += patterns(
     url(r'^logout$', 'student.views.logout_user', name='logout'),
 )
 
-# token views for Qiniu
-#added by gzc 20160404
-urlpatterns += patterns(
-    '',
-
-    url(r'^token/$', 'course_creators.views.token', name='token'),
-	url(r'^test_upload/$', 'course_creators.views.test_upload', name='test_upload'),
-)
-
 # restful api
 urlpatterns += patterns(
     'contentstore.views',
