@@ -2,10 +2,10 @@
 $(function(){
 	(function(){
 		var curr = 0;
-		$("#jsNav .trigger").each(function(i){
+		$(".home .content .area .js #jsNav .trigger").each(function(i){
 			$(this).click(function(){
 				curr = i;
-				$("#js img").eq(i).fadeIn("slow").siblings("img").hide();
+				$(".home .content .area #js img").eq(i).fadeIn("slow").siblings("img").hide();
 				$(this).siblings(".trigger").removeClass("imgSelected").end().addClass("imgSelected");
 				return false;
 			});
@@ -24,17 +24,17 @@ $(function(){
 			} else {
 				todo = (curr + 1) % 4;
 			}
-			$("#jsNav .trigger").eq(todo).click();
+			$(".home .content .area .js #jsNav .trigger").eq(todo).click();
 		};
 		
 		//ǰ
-		$("#prev").click(function(){
+		$(".home .content .area #prev").click(function(){
 			pg(true);
 			return false;
 		});
 		
 		//
-		$("#next").click(function(){
+		$(".home .content .area #next").click(function(){
 			pg(false);
 			return false;
 		});
@@ -42,16 +42,16 @@ $(function(){
 		//Զ
 		var timer = setInterval(function(){
 			todo = (curr + 1) % 4;
-			$("#jsNav .trigger").eq(todo).click();
+			$(".home .content .area .js #jsNav .trigger").eq(todo).click();
 		},3000);
 		
-		$("#js,#prev,#next").hover(function(){
+		$(".home .content .area #js,.home .content .area #prev,.home .content .area #next").hover(function(){
 				clearInterval(timer);
 			},
 			function(){
 				timer = setInterval(function(){
 					todo = (curr + 1) % 4;
-					$("#jsNav .trigger").eq(todo).click();
+					$(".home .content .area .js #jsNav .trigger").eq(todo).click();
 				},3000);			
 			}
 		);
