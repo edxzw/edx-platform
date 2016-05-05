@@ -17408,7 +17408,7 @@ msgstr "资助本课程的机构名称。"
 
 #: cms/templates/index.html
 msgid "Note: The organization name is part of the course URL"
-msgstr ""
+msgstr "注意：机构名称是课程网址的组成部分，请按照默认提示填写。"
 
 #: cms/templates/index.html
 msgid ""
@@ -17425,7 +17425,7 @@ msgstr "在您的机构中能够标识您课程的唯一编号。"
 msgid ""
 "Note: This is part of your course URL, so no spaces or special characters "
 "are allowed and it cannot be changed."
-msgstr "注意：这是课程URL的一部分，请勿使用空格或特殊字符，一旦设定不可更改。"
+msgstr "注意：这是课程URL的一部分，请按照默认格式填写，请勿使用空格或特殊字符，一旦设定不可更改。"
 
 #: cms/templates/index.html
 msgid "The term in which your course will run."
