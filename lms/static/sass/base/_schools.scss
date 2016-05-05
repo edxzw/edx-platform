@@ -137,13 +137,14 @@ header.global {
 }
 .home div.content {
 	width:100%;
+	height: 536px;
 	margin: 0;
 }
 /*滑动效果部分的css样式布局*/
 
 .home .content .area {
 	width: 100%;
-	height: 450px;
+	height: 536px;
 	overflow: hidden;
 	position: relative;
 	cursor: pointer;
@@ -173,12 +174,12 @@ header.global {
 .home .content .area .js {
 	POSITION: relative;
 	WIDTH: 100%;
-	height: 410px;
+	height: 536px;
 	margin: 0 auto;
 }
 
 
-.home .content .area .js .box01 img {
+.home .content .area .js .box01 .img {
 	display: block;
 	margin: 0;
 	overflow: hidden;
