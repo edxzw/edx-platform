@@ -203,6 +203,11 @@ import calendar
             <label for="password">${_('Password')}</label>
             <input id="password" type="password" name="password" value="" required aria-required="true" />
           </li>
+          
+          <li class="field required password" id="field-password-confirm">
+            <label for="password">${_(u'确认密码')}</label>
+            <input id="password-confirm" type="password" name="password-confirm" value="" required aria-required="true" />
+          </li>
 
           % endif
         </ol>

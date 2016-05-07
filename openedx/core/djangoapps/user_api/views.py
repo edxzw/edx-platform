@@ -154,7 +154,7 @@ class LoginSessionView(APIView):
 class RegistrationView(APIView):
     """HTTP end-points for creating a new user. """
 
-    DEFAULT_FIELDS = ["email", "name", "username", "password"]
+    DEFAULT_FIELDS = ["email", "name", "username", "password", "password_confirm"]
 
     EXTRA_FIELDS = [
         "city",
@@ -255,6 +255,7 @@ class RegistrationView(APIView):
         Returns:
             HttpResponse: 200 on success
             HttpResponse: 400 if the request is not valid.
+            HttpResponse: 408 if the passwords do not match.
             HttpResponse: 409 if an account with the given username or email
                 address already exists
         """
@@ -262,6 +263,16 @@ class RegistrationView(APIView):
 
         email = data.get('email')
         username = data.get('username')
+        
+        password = data.get('password')
+        password_confirm = data.get('password_confirm')
+        
+        # Handle dismatched passwords
+        if password != password_confirm:
+            errors = {
+                "password" : [{"user_message": u"The passwords do not match"}]
+            }
+            return JsonResponse(errors, status=408)
 
         # Handle duplicate email/username
         conflicts = check_account_exists(email=email, username=username)
@@ -437,6 +448,31 @@ class RegistrationView(APIView):
             required=required
         )
 
+    def _add_password_confirm_field(self, form_desc, required=True):
+        """Add a password field to a form description.
+
+        Arguments:
+            form_desc: A form description
+
+        Keyword Arguments:
+            required (bool): Whether this field is required; defaults to True
+
+        """
+        # Translators: This label appears above a field on the registration form
+        # meant to hold the user's password.
+        password_label = _(u"password_confirm")
+
+        form_desc.add_field(
+            "password_confirm",
+            label=password_label,
+            field_type="password",
+            restrictions={
+                "min_length": PASSWORD_MIN_LENGTH,
+                "max_length": PASSWORD_MAX_LENGTH,
+            },
+            required=required
+        )
+        
     def _add_level_of_education_field(self, form_desc, required=True):
         """Add a level of education field to a form description.
 

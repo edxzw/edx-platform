@@ -1753,6 +1753,12 @@ def create_account(request, post_override=None):
     Used by form in signup_modal.html, which is included into navigation.html
     """
     warnings.warn("Please use RegistrationView instead.", DeprecationWarning)
+    
+    params = dict(request.POST.items())
+    password = params["password"]
+    password_confirm = params["password_confirm"]
+    if password != password_confirm:
+        return JsonResponse({'success': False, 'value': "The passwords do not match", 'field': "password"}, status=400)
 
     try:
         user = create_account_with_params(request, post_override or request.POST)
