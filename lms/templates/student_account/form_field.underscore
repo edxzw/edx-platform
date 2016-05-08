@@ -54,6 +54,9 @@
             <% if ( placeholder ) { %> placeholder="<%= placeholder %>"<% } %>
             value="<%- defaultValue %>"
         />
+
+
+
         <% if ( type === 'checkbox' ) { %>
             <label for="<%= form %>-<%= name %>">
                 <%= label %>
