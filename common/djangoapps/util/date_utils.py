@@ -131,7 +131,7 @@ def strftime_localized(dtime, format):      # pylint: disable=redefined-builtin
     """
 
     if format == "SHORT_DATE":
-        format = "%x"
+        format = DEFAULT_SHORT_DATE_FORMAT
     elif format == "LONG_DATE":
         # Translators: the translation for "LONG_DATE_FORMAT" must be a format
         # string for formatting dates in a long form.  For example, the

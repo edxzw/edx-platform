@@ -20,7 +20,13 @@
 }
 
 .wrapper-footer footer.primary .footer-about-copyright {
-	width: 40.91489%;
-	float: right;
+	width: 38.91489%;
+	float: left;
 	margin-left: 14.28571%
 }
+
+.not-signedin .wrapper-header .nav-pitch .action-signin:hover, .not-signedin .wrapper-header .nav-pitch .action-signin:focus, .view-util .wrapper-header .nav-pitch .action-signin:hover, .view-util .wrapper-header .nav-pitch .action-signin:focus {
+    background-color: #009fe6;
+    color: #fff;
+}
+

@@ -14,7 +14,7 @@ from django.utils.timezone import UTC
 
 from .fields import Date
 
-DEFAULT_START_DATE = datetime(2030, 1, 1, tzinfo=UTC())
+DEFAULT_START_DATE = datetime(2016, 1, 1, tzinfo=UTC())
 
 
 def clean_course_key(course_key, padding_char):

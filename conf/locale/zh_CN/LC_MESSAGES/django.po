@@ -629,7 +629,7 @@ msgstr "与此e-mail地址关联的用户帐户不能重置密码"
 
 #: common/djangoapps/student/forms.py
 msgid "Username must be minimum of two characters long"
-msgstr "用户名至少得两个字符串"
+msgstr "用户名至少得两个字符"
 
 #: common/djangoapps/student/forms.py
 msgid "A properly formatted e-mail is required"
@@ -637,11 +637,11 @@ msgstr "需要正确的邮件格式"
 
 #: common/djangoapps/student/forms.py
 msgid "A valid password is required"
-msgstr "需要一个有效的密码"
+msgstr "密码至少包含两个字符"
 
 #: common/djangoapps/student/forms.py
 msgid "Your legal name must be a minimum of two characters long"
-msgstr "你的合法名字必须至少包含两个字符的长度"
+msgstr "您的全名必须至少包含两个字符的长度"
 
 #: common/djangoapps/student/forms.py
 msgid ""
@@ -661,7 +661,7 @@ msgstr "Email长度不能超过 %(limit_value)s 个字符"
 
 #: common/djangoapps/student/forms.py
 msgid "You must accept the terms of service."
-msgstr "您必须接受本服务条款。"
+msgstr "请选择接受本服务条款。"
 
 #: common/djangoapps/student/forms.py
 msgid "A level of education is required"
@@ -3521,7 +3521,7 @@ msgid ""
 "Enter the video ID from the Video Uploads page and one or more transcript "
 "files in the following format: {format}. For example, an entry for a video "
 "with two transcripts looks like this: {example}"
-msgstr ""
+msgstr "确定一个5 - 10秒的视频,在课程视频之前播放。"
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid "Show Reset Button for Problems"
@@ -4342,7 +4342,7 @@ msgstr "Asset文件。可以是图像或者css文件"
 msgid ""
 "Asset's unique slug. We can reference the asset in templates using this "
 "value."
-msgstr ""
+msgstr "资产的独特蛞蝓。我们可以参考模板使用的资产价值。"
 
 #: lms/djangoapps/certificates/views/support.py
 msgid "user is not given."
@@ -8712,6 +8712,17 @@ msgstr "将在你获得的所有证书上显示的真实姓名"
 #: openedx/core/djangoapps/user_api/views.py
 msgid "Public username"
 msgstr "公开用户名"
+
+#. Translators: This label appears above a field on the registration form
+#. meant to hold the user's public username.
+#: openedx/core/djangoapps/user_api/views.py
+#: cms/templates/register.html
+msgid "password_confirm"
+msgstr "确认密码"
+
+#: common/djangoapps/student/views.py
+msgid "The passwords do not match"
+msgstr "两次输入密码不一致"
 
 #. Translators: These instructions appear on the registration form,
 #. immediately
