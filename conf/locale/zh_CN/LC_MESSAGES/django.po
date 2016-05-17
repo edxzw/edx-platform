@@ -19558,3 +19558,65 @@ msgid ""
 "A new revision was created: Merge between Revision #%(r1)d and Revision "
 "#%(r2)d"
 msgstr "产生新的修订版本：合并修订版本#%(r1)d与#%(r2)d"
+
+#: common/static/common/templates/discussion/discussion-home.underscore
+msgid "Focus in on specific topics"
+msgstr "专注于特定的主题"
+
+#: common/static/common/templates/discussion/discussion-home.underscore
+msgid "Search for specific posts"
+msgstr "搜索特定的职位"
+
+#: common/static/common/templates/discussion/discussion-home.underscore
+msgid "Sort by date, vote, or comments"
+msgstr "按日期排序,投票或者评论"
+
+#: common/static/common/templates/discussion/discussion-home.underscore
+msgid "Upvote posts and good responses"
+msgstr "更新文章和良好的反应"
+
+#: common/static/common/templates/discussion/discussion-home.underscore
+msgid "Report Forum Misuse"
+msgstr "报告论坛滥用"
+
+#: common/static/common/templates/discussion/discussion-home.underscore
+msgid "Follow posts for updates"
+msgstr "按照文章的更新"
+
+#: cms\templates\js\mock\mock-create-course-rerun.underscore
+msgid "edX Demonstration Course"
+msgstr "edX示范课程"
+
+#: lms/templates/courseware/course_about.html
+msgid "View Courseware"
+msgstr "查看课程"
+
+#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
+#: common\lib\xmodule\xmodule\tests\test_capa_module.py
+#: common\test\acceptance\tests\studio\test_studio_container.py
+msgid "Checkboxes with Hints and Feedback"
+msgstr "带提示和反馈的复选框"
+
+#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
+#: common\lib\xmodule\xmodule\tests\test_capa_module.py
+#: common\test\acceptance\tests\studio\test_studio_container.py
+msgid "Dropdown with Hints and Feedback"
+msgstr "带提示和反馈的下拉菜单"
+
+#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
+#: common\lib\xmodule\xmodule\tests\test_capa_module.py
+#: common\test\acceptance\tests\studio\test_studio_container.py
+msgid "Multiple Choice with Hints and Feedback"
+msgstr "带提示和反馈的多项选择"
+
+#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
+#: common\lib\xmodule\xmodule\tests\test_capa_module.py
+#: common\test\acceptance\tests\studio\test_studio_container.py
+msgid "Numerical Input with Hints and Feedback"
+msgstr "带提示和反馈的数值输入"
+
+#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
+#: common\lib\xmodule\xmodule\tests\test_capa_module.py
+#: common\test\acceptance\tests\studio\test_studio_container.py
+msgid "Text Input with Hints and Feedback"
+msgstr "带提示和反馈的文本输入"

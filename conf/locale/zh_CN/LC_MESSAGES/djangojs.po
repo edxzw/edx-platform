@@ -2133,7 +2133,7 @@ msgstr "此字段的内容不能包含空格。"
 
 #: common/static/common/js/components/utils/view_utils.js
 msgid "Please do not use any spaces or special characters in this field."
-msgstr "此字段的内容不能包含空格或特殊字符。"
+msgstr "此字段的内容不能包含空格或中文。"
 
 #: common/static/common/js/components/views/paging_header.js
 msgid "Showing %(first_index)s out of %(num_items)s total"

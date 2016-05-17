@@ -269,7 +269,7 @@ AUTHENTICATION_BACKENDS = (
     'ratelimitbackend.backends.RateLimitModelBackend',
 )
 
-LMS_BASE = None
+LMS_BASE = 'zhishigang.cn'
 
 # These are standard regexes for pulling out info like course_ids, usage_ids, etc.
 # They are used so that URLs with deprecated-format strings still work.
