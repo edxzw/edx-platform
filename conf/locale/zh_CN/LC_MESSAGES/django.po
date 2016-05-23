@@ -8720,9 +8720,6 @@ msgstr "公开用户名"
 msgid "password_confirm"
 msgstr "确认密码"
 
-#: common/djangoapps/student/views.py
-msgid "The passwords do not match"
-msgstr "两次输入密码不一致"
 
 #. Translators: These instructions appear on the registration form,
 #. immediately
@@ -19620,3 +19617,31 @@ msgstr "带提示和反馈的数值输入"
 #: common\test\acceptance\tests\studio\test_studio_container.py
 msgid "Text Input with Hints and Feedback"
 msgstr "带提示和反馈的文本输入"
+
+#: openedx/core/djangoapps/user_api/views.py
+msgid "Full Screen Image Tool"
+msgstr "全屏幕图像工具" 
+
+#: common\lib\xmodule\xmodule\templates\html\anon_user_id.yaml
+#: common\lib\xmodule\xmodule\tests\templates\test\anon_user_id.yaml
+msgid "Anonymous User ID"
+msgstr "匿名用户ID"  
+
+#: openedx/core/djangoapps/user_api/views.py
+msgid "Zooming Image Tool"
+msgstr "图像的缩放工具"
+
+#: cms\djangoapps\contentstore\features\component.py
+msgid "Raw HTML"
+msgstr "源HTML代码"  
+
+#: cms\djangoapps\contentstore\features\component.py
+msgid "Announcement"
+msgstr "公告"  
+
+#: cms\djangoapps\contentstore\features\component.py
+msgid "IFrame Tool"
+msgstr "子窗口工具"   
+
+msgid "The passwords do not match"
+msgstr "两次输入密码不一致"
