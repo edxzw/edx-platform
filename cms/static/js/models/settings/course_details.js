@@ -47,12 +47,12 @@ var CourseDetails = Backbone.Model.extend({
         if (newattrs.end_date && newattrs.enrollment_end && newattrs.end_date < newattrs.enrollment_end) {
             errors.enrollment_end = gettext("The enrollment end date cannot be after the course end date.");
         }
-        if (newattrs.intro_video && newattrs.intro_video !== this.get('intro_video')) {
-            if (this._videokey_illegal_chars.exec(newattrs.intro_video)) {
-                errors.intro_video = gettext("Key should only contain letters, numbers, _, or -");
-            }
-            // TODO check if key points to a real video using google's youtube api
-        }
+//        if (newattrs.intro_video && newattrs.intro_video !== this.get('intro_video')) {
+//            if (this._videokey_illegal_chars.exec(newattrs.intro_video)) {
+//                errors.intro_video = gettext("Key should only contain letters, numbers, _, or -");
+//            }
+//            // TODO check if key points to a real video using google's youtube api
+//        }
         if(_.has(newattrs, 'entrance_exam_minimum_score_pct')){
             var range = {
                 min: 1,
@@ -66,7 +66,7 @@ var CourseDetails = Backbone.Model.extend({
         // NOTE don't return empty errors as that will be interpreted as an error state
     },
 
-    _videokey_illegal_chars : /[^a-zA-Z0-9_-]/g,
+  //  _videokey_illegal_chars : /[^a-zA-Z0-9_-]/g,
 
     set_videosource: function(newsource) {
         // newsource either is <video youtube="speed:key, *"/> or just the "speed:key, *" string
@@ -81,7 +81,7 @@ var CourseDetails = Backbone.Model.extend({
     },
 
     videosourceSample : function() {
-        if (this.has('intro_video')) return "//www.youtube.com/embed/" + this.get('intro_video');
+        if (this.has('intro_video')) return "//" + this.get('intro_video');
         else return "";
     },
 

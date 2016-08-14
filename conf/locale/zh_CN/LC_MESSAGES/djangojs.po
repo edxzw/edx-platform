@@ -3969,7 +3969,7 @@ msgstr "正在加载你的课程"
 msgid ""
 "An error has occurred. Try refreshing the page, or check your Internet "
 "connection."
-msgstr ""
+msgstr "发生了一个错误。请刷新网页或者检查你的网络链接"
 
 #: lms/static/js/student_account/views/account_settings_factory.js
 msgid "Basic Account Information (required)"
@@ -8557,5 +8557,14 @@ msgid "Use Current Transcript"
 msgstr "使用当前字幕"
 
 #: common/djangoapps/student/views.py
+#: openedx/core/djangoapps/user_api/views.py 
 msgid "The passwords do not match"
 msgstr "两次输入密码不一致"
+
+#: cms\static\js\spec\models\component_template_spec.js 
+msgid "Multiple Choice"
+msgstr "单选题"
+
+#: cms\static\js\spec\models\component_template_spec.js 
+msgid "Checkboxes"
+msgstr "多选题"

@@ -43,11 +43,13 @@
                  console.log($(this));
                 $("#formToUpdate").ajaxSubmit({
                     type:'post',
-                    url:'http://123.57.5.224/simpleUpload/upload.php',
-                    success:function(data){
+                    url:'http://123.57.5.224/simpleUpload/upload1.php',
+		    dataType:'jsonp',
+                    jsonp:"callback",
+                    jsonpCallback:"success_jsonpCallback",
+                    success:function(json){
                         //console.log(data);
-                       // alert(data.result);
-		        $('input.videolist-url').val("http://"+data.result).trigger('input');
+                        alert(json);
                     },
                     error:function(XmlHttpRequest,textStatus,errorThrown){
                         console.log(XmlHttpRequest);

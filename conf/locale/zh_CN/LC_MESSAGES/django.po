@@ -1608,12 +1608,12 @@ msgstr "禁止使用不安全的脚本代码"
 #: common/lib/capa/capa/responsetypes.py
 #: cms/templates/widgets/problem-edit.html
 msgid "Checkboxes"
-msgstr "复选框"
+msgstr "多选题"
 
 #: common/lib/capa/capa/responsetypes.py
 #: cms/templates/widgets/problem-edit.html
 msgid "Multiple Choice"
-msgstr "多项选择"
+msgstr "单选题"
 
 #. Translators: 'shuffle' and 'answer-pool' are attribute names and should not
 #. be translated.
@@ -18278,11 +18278,11 @@ msgstr "删除当前视频"
 #. YouTube video ID for a course video
 #: cms/templates/settings.html
 msgid "your YouTube video's ID"
-msgstr "您的 YouTube 视频 ID"
+msgstr "您的视频 ID"
 
 #: cms/templates/settings.html
 msgid "Enter your YouTube video's ID (along with any restriction parameters)"
-msgstr "请输入您的YouTube视频编号(以及任何必要的限制参数)"
+msgstr "请输入您的视频编号(以及任何必要的限制参数)"
 
 #: cms/templates/settings.html
 msgid "Expectations of the students taking this course"
@@ -19580,7 +19580,7 @@ msgstr "报告论坛滥用"
 msgid "Follow posts for updates"
 msgstr "按照文章的更新"
 
-#: cms\templates\js\mock\mock-create-course-rerun.underscore
+#: cms/templates/js/mock/mock-create-course-rerun.underscore
 msgid "edX Demonstration Course"
 msgstr "edX示范课程"
 
@@ -19588,33 +19588,33 @@ msgstr "edX示范课程"
 msgid "View Courseware"
 msgstr "查看课程"
 
-#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
-#: common\lib\xmodule\xmodule\tests\test_capa_module.py
-#: common\test\acceptance\tests\studio\test_studio_container.py
+#: common/lib/xmodule/xmodule/templates/problem/checkboxes_response_hint.yaml
+#: common/lib/xmodule/xmodule/tests/test_capa_module.py
+#: common/test/acceptance/tests/studio/test_studio_container.py
 msgid "Checkboxes with Hints and Feedback"
 msgstr "带提示和反馈的复选框"
 
-#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
-#: common\lib\xmodule\xmodule\tests\test_capa_module.py
-#: common\test\acceptance\tests\studio\test_studio_container.py
+#: common/lib/xmodule/xmodule/templates/problem/checkboxes_response_hint.yaml
+#: common/lib/xmodule/xmodule/tests/test_capa_module.py
+#: common/test/acceptance/tests/studio/test_studio_container.py
 msgid "Dropdown with Hints and Feedback"
 msgstr "带提示和反馈的下拉菜单"
 
-#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
-#: common\lib\xmodule\xmodule\tests\test_capa_module.py
-#: common\test\acceptance\tests\studio\test_studio_container.py
+#: common/lib/xmodule/xmodule/templates/problem/checkboxes_response_hint.yaml
+#: common/lib/xmodule/xmodule/tests/test_capa_module.py
+#: common/test/acceptance/tests/studio/test_studio_container.py
 msgid "Multiple Choice with Hints and Feedback"
 msgstr "带提示和反馈的多项选择"
 
-#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
-#: common\lib\xmodule\xmodule\tests\test_capa_module.py
-#: common\test\acceptance\tests\studio\test_studio_container.py
+#: common/lib/xmodule/xmodule/templates/problem/checkboxes_response_hint.yaml
+#: common/lib/xmodule/xmodule/tests/test_capa_module.py
+#: common/test/acceptance/tests/studio/test_studio_container.py
 msgid "Numerical Input with Hints and Feedback"
 msgstr "带提示和反馈的数值输入"
 
-#: common\lib\xmodule\xmodule\templates\problem\checkboxes_response_hint.yaml
-#: common\lib\xmodule\xmodule\tests\test_capa_module.py
-#: common\test\acceptance\tests\studio\test_studio_container.py
+#: common/lib/xmodule/xmodule/templates/problem/checkboxes_response_hint.yaml
+#: common/lib/xmodule/xmodule/tests/test_capa_module.py
+#: common/test/acceptance/tests/studio/test_studio_container.py
 msgid "Text Input with Hints and Feedback"
 msgstr "带提示和反馈的文本输入"
 
@@ -19622,8 +19622,8 @@ msgstr "带提示和反馈的文本输入"
 msgid "Full Screen Image Tool"
 msgstr "全屏幕图像工具" 
 
-#: common\lib\xmodule\xmodule\templates\html\anon_user_id.yaml
-#: common\lib\xmodule\xmodule\tests\templates\test\anon_user_id.yaml
+#: common/lib/xmodule/xmodule/templates/html/anon_user_id.yaml
+#: common/lib/xmodule/xmodule/tests/templates/test/anon_user_id.yaml
 msgid "Anonymous User ID"
 msgstr "匿名用户ID"  
 
@@ -19631,17 +19631,53 @@ msgstr "匿名用户ID"
 msgid "Zooming Image Tool"
 msgstr "图像的缩放工具"
 
-#: cms\djangoapps\contentstore\features\component.py
+#: cms/djangoapps/contentstore/features/component.py
 msgid "Raw HTML"
 msgstr "源HTML代码"  
 
-#: cms\djangoapps\contentstore\features\component.py
+#: cms/djangoapps/contentstore/features/component.py
 msgid "Announcement"
 msgstr "公告"  
 
-#: cms\djangoapps\contentstore\features\component.py
+#: cms/djangoapps/contentstore/features/component.py
 msgid "IFrame Tool"
 msgstr "子窗口工具"   
 
+
+#: common/djangoapps/student/views.py
+#: openedx/core/djangoapps/user_api/views.py
 msgid "The passwords do not match"
 msgstr "两次输入密码不一致"
+
+#: common/lib/xmodule/xmodule/templates/problem/blank_common.yaml
+msgid "Blank Common Problem"
+msgstr "空白的常见问题"
+
+#: common/lib/xmodule/xmodule/js/fixtures/jsinput_problem.html
+#: common/lib/xmodule/xmodule/templates/problem/jsinput_response.yaml
+msgid "Custom Javascript Display and Grading"
+msgstr "自定义JavaScript显示和分级"
+
+#: cms/djangoapps/contentstore/features/component.feature
+#: common/lib/xmodule/xmodule/templates/problem/customgrader.yaml
+#: common/lib/xmodule/xmodule/templates/problem/latex_problem.yaml
+msgid "Custom Python-Evaluated Input"
+msgstr "自定义的Python评估输入"
+
+#: cms/djangoapps/contentstore/features/component.feature
+#: cms/static/js/spec/models/component_template_spec.js
+#: common/lib/xmodule/xmodule/templates/problem/drag_and_drop.yaml
+msgid "Drag and Drop"
+msgstr "拖放"
+
+#:cms/envs/common.py
+#:lms/envs/common.py
+msgid "Molecular Structure"
+msgstr "分子结构"
+
+#:cms/djangoapps/contentstore/features/component.feature
+#:cms/static/js/spec/models/component_template_spec.js
+#:common/lib/xmodule/xmodule/templates/problem/problem_with_hint.yaml
+#:common/lib/xmodule/xmodule/templates/problem/problem_with_hint_in_latex.yaml
+msgid "Problem with Adaptive Hint"
+msgstr "问题自适应提示"
