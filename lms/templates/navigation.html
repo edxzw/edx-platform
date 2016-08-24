@@ -68,7 +68,18 @@ site_status_msg = get_site_status_msg(course_id)
         % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
         
           <li class="nav-global-01">
-            <a href="${marketing_link('COURSES')}">${_('Find Courses')}</a>
+      <!--      <a href="${marketing_link('COURSES')}">${_('Find Courses')}</a>  -->
+		<div>	
+			<form method="get" action="/courses">
+              <label><span class="sr">${_("Search for a course")}</span>
+                <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
+              </label>
+              <button class="search-button" type="submit">
+                <i class="icon fa fa-search" aria-hidden="true"></i><span class="sr">${_("Search")}</span>
+              </button>
+            </form>
+		</div>
+	
           </li>
           
         % endif  
