@@ -140,7 +140,7 @@ site_status_msg = get_site_status_msg(course_id)
       % endif
 <!--添加课程搜索-->
       % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
-          <div class="course-search">
+        <!--  <div class="course-search">
             <form method="get" action="/courses">
               <label><span class="sr">${_("Search for a course")}</span>
                 <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
@@ -149,7 +149,7 @@ site_status_msg = get_site_status_msg(course_id)
                 <i class="icon fa fa-search" aria-hidden="true"></i><span class="sr">${_("Search")}</span>
               </button>
             </form>
-          </div> 
+          </div> -->
         % endif
 <!--添加课程搜索-->
     </ol>

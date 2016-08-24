@@ -8568,3 +8568,7 @@ msgstr "单选题"
 #: cms\static\js\spec\models\component_template_spec.js 
 msgid "Checkboxes"
 msgstr "多选题"
+
+#:common/lib/xmodule/xmodule/templates/about/overview.yaml
+msgid "About This Course"
+msgstr "关于课程"

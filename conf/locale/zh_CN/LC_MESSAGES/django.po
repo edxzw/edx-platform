@@ -18033,11 +18033,11 @@ msgstr ""
 
 #: cms/templates/settings.html
 msgid "Schedule &amp; Details Settings"
-msgstr "日程＆细节设置"
+msgstr "日程和细节设置"
 
 #: cms/templates/settings.html
 msgid "Schedule & Details"
-msgstr "日程 & 细节"
+msgstr "日程 和 细节"
 
 #: cms/templates/settings.html
 msgid "Basic Information"
@@ -18827,7 +18827,7 @@ msgstr "更新"
 
 #: cms/templates/widgets/header.html
 msgid "Schedule &amp; Details"
-msgstr "日程＆细节"
+msgstr "日程和细节"
 
 #: cms/templates/widgets/header.html
 msgid "Import"
@@ -19681,3 +19681,12 @@ msgstr "分子结构"
 #:common/lib/xmodule/xmodule/templates/problem/problem_with_hint_in_latex.yaml
 msgid "Problem with Adaptive Hint"
 msgstr "问题自适应提示"
+
+#: common/lib/xmodule/xmodule/templates/about/overview.yaml
+#: common/test/data/manual-testing-complete/about/overview.html
+#: common/test/data/course_info_updates/about/overview.html
+#: common/test/data/course_before_rename/about/overview.html
+#: common/test/data/course_after_rename/about/overview.html
+#: common/test/data/2014/about/overview.html
+msgid "About This Course"
+msgstr "关于课程"
