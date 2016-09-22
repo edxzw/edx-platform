@@ -468,7 +468,7 @@
           minWidth: 150,
           cssClass: "file-download-link",
           formatter: function(row, cell, value, columnDef, dataContext) {
-            return '<a target="_blank" href="' + dataContext['url'] + '">' + dataContext['name'] + '</a>';
+            return '<a target="_blank" href="' + dataContext['url'].replace('file:///tmp', location.protocol + '//' + location.host) + '">' + dataContext['name'] + '</a>';
           }
         }
       ];
