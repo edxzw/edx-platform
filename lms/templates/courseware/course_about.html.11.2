@@ -120,14 +120,11 @@ from openedx.core.lib.courses import course_image_url
 
         <div class="main-cta">
         %if user.is_authenticated() and registered:
-          
-	  <span class="register disabled">${_("You are enrolled in this course")}</span>
-
-	  %if show_courseware_link:
+          %if show_courseware_link:
             <a href="${course_target}">
           %endif
 
-        <!--  <span class="register disabled">${_("You are enrolled in this course")}</span>  -->
+          <span class="register disabled">${_("You are enrolled in this course")}</span>
 
           %if show_courseware_link:
             <strong>${_("View Courseware")}</strong>
@@ -218,17 +215,17 @@ from openedx.core.lib.courses import course_image_url
         <header>
           % if microsite.get_value('course_about_show_social_links', True):
           <div class="social-sharing">
-          <!--  <div class="sharing-message">${_("Share with friends and family!")}</div> -->
+            <div class="sharing-message">${_("Share with friends and family!")}</div>
             ## TODO: this should probably be an overrideable block,
             ##       or something allowing themes to do whatever they
             ##       want here (and on this whole page, really).
             % if self.stanford_theme_enabled():
-          <!--    <a href="http://twitter.com/intent/tweet?text=I+just+enrolled+in+${course.number}+${course.display_name_with_default}!+(http://class.stanford.edu)" class="share">
+              <a href="http://twitter.com/intent/tweet?text=I+just+enrolled+in+${course.number}+${course.display_name_with_default}!+(http://class.stanford.edu)" class="share">
                 <i class="icon fa fa-twitter"></i><span class="sr">${_("Tweet that you've enrolled in this course")}</span>
               </a>
               <a href="mailto:?subject=Take%20a%20course%20at%20Stanford%20online!&body=I%20just%20enrolled%20in%20${course.number}%20${course.display_name_with_default}+(http://class.stanford.edu)" class="share">
                 <i class="icon fa fa-envelope"></i><span class="sr">${_("Email someone to say you've enrolled in this course")}</span>
-              </a> --> 
+              </a>
             % else:
               <%
                 site_domain = microsite.get_value('site_domain', settings.SITE_NAME)
@@ -262,7 +259,7 @@ from openedx.core.lib.courses import course_image_url
                     )
                 ).replace(u" ", u"%20")
               %>
-           <!--   <a href="${tweet_action}" class="share">
+              <a href="${tweet_action}" class="share">
                 <i class="icon fa fa-twitter"></i><span class="sr">${_("Tweet that you've enrolled in this course")}</span>
               </a>
               <a href="${facebook_link}" class="share">
@@ -270,18 +267,7 @@ from openedx.core.lib.courses import course_image_url
               </a>
               <a href="${email_subject}" class="share">
                 <i class="icon fa fa-envelope"></i><span class="sr">${_("Email someone to say you've enrolled in this course")}</span>
-              </a>  -->
-
-	      <!-- JiaThis Button BEGIN -->
-              <div id="ckepop"> 
-                <span class="jiathis_txt">分享到：</span>
-                <a class="jiathis_button_weixin">微信</a>
-                <a href="http://www.jiathis.com/share"  class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-                <a class="jiathis_counter_style"></a> </div>
-                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
-                <!-- JiaThis Button END -->
-
-
+              </a>
             % endif
           </div>
           % endif

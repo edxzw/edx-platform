@@ -67,7 +67,7 @@ a {
 // ====================
 form {
   label {
-    display: block;
+  //  display: block;
   }
 }
 
@@ -78,6 +78,52 @@ form.choicegroup {
   }
 }
 
+form {
+  button.search-button {
+    border: 1px solid #00095f;
+    border-bottom: 1px solid #000036;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 #2595bc;
+    background: #1d5a81;
+    border-top: 1px solid #1d5a81;
+    color: #fff;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #00003e;
+    font: normal 1.2rem/1.6rem "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+    letter-spacing: 1px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+  }
+
+ button.search-button:hover {
+    border: 1px solid #00095f;
+    border-bottom: 1px solid #000036;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 #2595bc;
+    background: #1d5a81;
+    border-top: 1px solid #1d5a81;
+    color: #fff;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #00003e;
+    font: normal 1.2rem/1.6rem "Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+    letter-spacing: 1px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+  }
+
+}
 
 textarea,
 input[type="text"],
